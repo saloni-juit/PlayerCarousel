@@ -1,0 +1,25 @@
+.grid {
+  display: flex;                       
+  flex-wrap: wrap;                   
+  justify-content: space-around; 
+}
+
+.cell {
+  flex: 0 0 32%;                      
+  height: 50px;
+  margin-bottom: 5px;
+  background-color: #000;
+  cursor: pointer;
+  text-align: center;
+  border:solid 1px gray;
+}
+
+.disabled{
+	pointer-events: none;
+	background-color: lightgray;
+}
+.container{
+	width: 50%;
+	margin: 0 auto;
+	margin-top:100px;
+}
