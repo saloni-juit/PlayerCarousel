@@ -1,25 +1,38 @@
 .grid {
-  display: flex;                       
-  flex-wrap: wrap;                   
-  justify-content: space-around; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .cell {
-  flex: 0 0 32%;                      
+  flex: 0 0 32%;
   height: 50px;
   margin-bottom: 5px;
   background-color: #000;
   cursor: pointer;
   text-align: center;
-  border:solid 1px gray;
+  border: solid 1px gray;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version,  */
 }
 
-.disabled{
-	pointer-events: none;
-	background-color: lightgray;
+.disabled {
+  pointer-events: none;
+  background-color: lightgray;
 }
-.container{
-	width: 50%;
-	margin: 0 auto;
-	margin-top:100px;
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 100px;
 }
